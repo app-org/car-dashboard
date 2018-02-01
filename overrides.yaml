@@ -1,0 +1,28 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 1
+revisionHistoryLimit: 1
+image:
+  repository: 10.0.0.1:8500/default/cardashboard
+hpa:
+  enabled: false
+cloud_services:
+  conversation:
+    credentials: '{
+                   "url": "https://gateway.watsonplatform.net/conversation/api",
+                   "username": "b0f73dc5-897b-4bb3-a34a-724d98b659d6",
+                   "password": "1p0T3ZiOvklP"
+                  }'
+    workspace: "512f9673-51d1-4ff3-a812-48994c116073"
+  speech_to_text:
+    credentials: '{
+                    "url": "https://gateway.watsonplatform.net/conversation/api",
+                    "username": "b0f73dc5-897b-4bb3-a34a-724d98b659d6",
+                    "password": "1p0T3ZiOvklP"
+                  }'
+  text_to_speech:
+    credentials: '{
+                    "url": "https://gateway.watsonplatform.net/conversation/api",
+                    "username": "b0f73dc5-897b-4bb3-a34a-724d98b659d6",
+                    "password": "1p0T3ZiOvklP"
+                  }'
